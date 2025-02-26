@@ -1,5 +1,5 @@
 const ws = new WebSocket(
-    `ws://${location.hostname + (location.port ? ':' + location.port : '')}/.netlify/functions/server`
+    `wss://${location.hostname + (location.port ? ':' + location.port : '')}/.netlify/functions/server`
 );
 ws.onopen = () => {
     ws.send('Hello Server');
